@@ -8,7 +8,7 @@ function changeState(state, action){
         return state;
     }
   }
-
+  // dispatch({type: "INCREASE_COUNT"})
 function dispatch(action){
     state = changeState(state, action)
     render()
@@ -17,3 +17,5 @@ function dispatch(action){
 function render(){
     document.body.textContent = state.count
 }
+
+render()
